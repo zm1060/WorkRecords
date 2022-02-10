@@ -1,85 +1,30 @@
-# OcrLiteAndroidNcnn
+# WorkRecords
 
-[![Issue](https://img.shields.io/github/issues/benjaminwan/OcrLiteAndroidNcnn.svg)](https://github.com/benjaminwan/OcrLiteAndroidNcnn/issues)
-[![Star](https://img.shields.io/github/stars/benjaminwan/OcrLiteAndroidNcnn.svg)](https://github.com/benjaminwan/OcrLiteAndroidNcnn)
+[![Issue](https://img.shields.io/github/issues/benjaminwan/OcrLiteAndroidNcnn.svg)](https://github.com/zm1060/WorkRecords/issues)
+[![Star](https://img.shields.io/github/stars/benjaminwan/OcrLiteAndroidNcnn.svg)](https://github.com/zm1060/WorkRecords)
 
 <details open>
     <summary>目录</summary>
 
 - [OcrLiteAndroidNcnn](#OcrLiteAndroidNcnn)
-    - [联系方式](#联系方式)
-    - [项目完整源码](#项目完整源码)
-    - [APK下载](#APK下载)
-    - [简介](#简介)
-    - [总体说明](#总体说明)
-    - [更新说明](#更新说明)
+
+
+
+
     - [编译说明](#编译说明)
         - [编译Release包](#编译Release包)
         - [AndroidStudio调试启动](#AndroidStudio调试启动)
         - [重新编译](#重新编译)
-    - [项目结构](#项目结构)
-    - [常见问题](#常见问题)
-        - [输入参数说明](#输入参数说明)
-    - [关于作者](#关于作者)
-    - [版权声明](#版权声明)
-    - [示例图](#示例图)
-        - [IMEI识别](#IMEI识别)
-        - [身份证识别](#身份证识别)
-        - [车牌识别](#车牌识别)
+
 
 </details>
 
-## 联系方式
 
-* QQ①群：994929053
-* QQ②群：820132154
-* QQ③群：904091319
 
-## 项目完整源码
 
-* 整合好源码和依赖库的完整工程项目，文件比较大，可到Q群共享内下载，以Project开头的压缩包文件为源码工程，例：Project_OcrLiteAndroidNcnn-版本号.7z
-* 如果想自己折腾，则请继续阅读本说明
 
-## APK下载
 
-* 编译好的demo apk，可以在release中下载，或者Q群共享内下载，文件名例：OcrLiteAndroidNcnn-版本号-cpu-release.apk
-* 或者[Github下载](https://github.com/benjaminwan/OcrLiteAndroidNcnn/releases)
 
-## 简介
-
-Chineseocr Lite Android Ncnn Demo，超轻量级中文OCR Android Demo，支持ncnn推理 (DBNet+AngleNet+CRNN)
-把onnx模型格式转为ncnn格式，并使用ncnn推理框架进行OCR识别。
-**代码和模型均源自chineseocr lite的onnx分支**
-
-详情请查看 [https://github.com/ouyanghuiyu/chineseocr_lite](https://github.com/ouyanghuiyu/chineseocr_lite)
-
-采用ncnn神经网络前向计算框架[https://github.com/Tencent/ncnn](https://github.com/Tencent/ncnn)
-
-## 总体说明
-
-1. 封装为独立的Library，可以编译为aar，作为模块来调用；
-2. Native层以C++编写；
-3. Demo App以Kotlin-JVM编写；
-4. Android版与其它版本不同，包含了几个应用场景，包括相册识别、摄像头识别、手机IMEI号识别、摄像头身份证识别这几个功能页面；
-5. opencv 3.4.15，使用了[opencv-mobile](https://github.com/nihui/opencv-mobile)的代码，编译脚本在script文件夹里；
-6. ncnn 20210720；
-7. 可选择CPU版或GPU版；CPU版仅支持CPU运算，最低支持API21，且安装包体积小；GPU版支持vulkan(GPU加速)，最低支持API24，安装包体积较大；
-
-## 更新说明
-
-#### 2021-09-28 update 1.6.0
-
-* opencv 3.4.15(特别说明：4.5.3也可以支持，如果换成cv4，minSdkVersion必须改为24)
-* ncnn 20210720
-* 升级kotlin: 1.5.31
-* 升级gradle: 7.0.2
-* 升级各dependencies
-* 使用kotlin coroutines代替rxjava
-
-#### 2021-10-28 update 1.6.1
-
-* 编辑build.gradle，把版本定义放到root build.gradle
-* 编辑github workflow config，上传aar文件到release
 
 ## 编译说明
 
