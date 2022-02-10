@@ -6,8 +6,6 @@
 <details open>
     <summary>目录</summary>
 
-- [OcrLiteAndroidNcnn](#OcrLiteAndroidNcnn)
-
 
 
 
@@ -109,45 +107,5 @@ OcrLibrary/.cxx
 OcrLibrary/build
 ```
 
-## 项目结构
 
-```
-OcrLiteAndroidNcnn
-    ├── app               # demo app
-    ├── capture           # 截图
-    ├── common-aar        # app引用的aar库
-    ├── keystore          # app签名密钥文件
-    ├── OcrLibrary        # Ocr引擎库，包含Jni和C++代码
-    └── scripts           # 编译脚本
-```
-
-## 常见问题
-
-### 输入参数说明
-
-请参考[OcrLiteOnnx项目](https://github.com/ouyanghuiyu/chineseocr_lite/tree/onnx/cpp_projects/OcrLiteOnnx)
-
-## 关于作者
-
-* Android demo编写：[benjaminwan](https://github.com/benjaminwan)
-* 模型开发：[DayBreak](https://github.com/DayBreak-u)
-
-## 版权声明
-
-- OCR模型版权归[DayBreak](https://github.com/DayBreak-u)所有；
-- 其它工程代码版权归本仓库所有者所有；
-
-## 示例图
-
-#### IMEI识别
-
-![avatar](capture/detect_IMEI.gif)
-
-#### 身份证识别
-
-![avatar](capture/detect_id_card.gif)
-
-#### 车牌识别
-
-![avatar](capture/detect_plate.gif)
 
