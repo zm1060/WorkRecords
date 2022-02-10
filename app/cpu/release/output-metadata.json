@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.benjaminwan.ocr.ncnn",
+  "variantName": "cpuRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 22,
+      "versionName": "1.6.1",
+      "outputFile": "OcrLiteAndroidNcnn-1.6.1-cpu-release.apk"
+    }
+  ],
+  "elementType": "File"
+}
